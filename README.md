@@ -14,16 +14,23 @@ Run locally: `python3 -m http.server` and open http://localhost:8000.
 
 ## Design direction
 
-19th-century salon portraiture (painters who rendered satin, velvet and lace in oil) meets nature: primed-linen ground with canvas grain, varnish-dark hero, moss-green atelier section, gilt frames around every image, museum wall-label captions, laurel-sprig ornaments. Fonts: Cormorant Garamond / Cormorant SC (display) and EB Garamond (text).
+Built from Sahar's own portfolio and the painting it draws on, Daniel Bérard's *Portrait de la princesse Demetre-Stirbey, née de Soyka (en habit Louis XV)* (1884, Musée des Beaux-Arts de Nice): teal satin, blush bows, cream.
+
+- Warm off-white paper ground, taupe display caps in Marcellus with wide tracking, Cormorant/EB Garamond text
+- Pencil-line botanical drawings, torn-paper hero edge, moodboard-style photo mats, oval cameo portrait
+- Her three collections, each with its colour story: The Fairy Tale (sage), In Bloom (blush), Teal & Roses (turquoise, deep teal, off-white, blush)
 
 ## Swapping in real images
 
-Each slot is a labelled SVG in `assets/img/`. Drop the real photo next to it (e.g. `look-01.jpg`), then in `index.html` replace `look-01.svg` with `look-01.jpg` (each look appears twice: `src` and `data-full`). Update the `alt` text too.
+Each slot is a labelled SVG in `assets/img/`. Drop the real photo next to it (e.g. `look-01.jpg`), then in `index.html` replace `look-01.svg` with `look-01.jpg` (looks appear twice: `src` and `data-full`). Update the `alt` text too.
 
 | Slot | File | Shape | Suggested size |
 |---|---|---|---|
 | Hero | `hero` | portrait 4:5 | 1600 × 2000 |
-| Looks I–VI | `look-01` … `look-06` | portrait 3:4 | 1200 × 1600 |
-| Atelier portrait | `atelier` | portrait 4:5 | 1400 × 1750 |
+| The Fairy Tale | `look-01`, `look-02` | portrait 3:4 | 1200 × 1600 |
+| In Bloom | `look-03`, `look-04` | portrait 3:4 | 1200 × 1600 |
+| Teal & Roses | `look-05`, `look-06` | portrait 3:4 | 1200 × 1600 |
+| Process (moodboard, sketch, execution) | `process-1` … `process-3` | landscape 4:3 | 1600 × 1200 |
+| Portrait of Sahar | `atelier` | portrait 4:5 (shown as an oval) | 1400 × 1750 |
 
 Images are cropped to those ratios with `object-fit: cover`, so other sizes still work. Export JPGs around 300–500 KB.
