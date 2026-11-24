@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#efe7dc"/><stop offset="1" stop-color="#c2ad96"/></linearGradient>
+<radialGradient id="l" cx="0.35" cy="0.25" r="0.8"><stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="1500" fill="url(#g)"/><rect width="1200" height="1500" fill="url(#l)"/>
+<path d="M540.0 270.0 q60 -50 120 0 l40 300.0 q216.0 525.0 264.0 930.0 l-608.0 0 q48.0 -405.0 264.0 -930.0 z" fill="#2a2522" fill-opacity="0.08"/>
+<text x="600.0" y="1420" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="8" fill="#2a2522" fill-opacity="0.55">LOOK 03 · PLACEHOLDER</text>
+</svg>
