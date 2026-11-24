@@ -45,7 +45,7 @@ h2 {
   font: 400 clamp(2.2rem, 4.6vw, 3.8rem)/1.1 var(--display);
   color: var(--taupe); letter-spacing: 0.04em; text-transform: uppercase;
 }
-h2 em { font: italic 300 1.1em/1 var(--serif); text-transform: none; letter-spacing: 0; color: var(--teal); }
+h2 em { font: inherit; font-style: normal; text-transform: inherit; letter-spacing: inherit; color: var(--teal); }
 .eyebrow {
   font: 400 0.82rem/1 var(--display);
   letter-spacing: 0.32em; text-transform: uppercase;
