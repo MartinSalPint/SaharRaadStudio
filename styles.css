@@ -32,7 +32,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0; position: relative; overflow-x: clip;
+  margin: 0;
   background: var(--paper) var(--paper-grain);
   color: var(--ink);
   font: 400 1.125rem/1.7 var(--text);
@@ -59,23 +59,6 @@ h2 em { font: italic 300 1.1em/1 var(--serif); text-transform: none; letter-spac
 .rule-name::before, .rule-name::after { content: ""; height: 1px; background: var(--line); flex: 1; }
 .rule-name::before { flex: 3; }
 .rule-name span { font: 400 0.95rem/1 var(--display); letter-spacing: 0.24em; text-transform: uppercase; color: var(--taupe); }
-
-/* Living background: embroidered flowers */
-.emb-defs { position: absolute; }
-.embroidery { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-main, .site-footer { position: relative; z-index: 1; }
-.bloom {
-  position: absolute; height: auto; aspect-ratio: 160 / 220; overflow: visible;
-  rotate: var(--tilt); scale: var(--flip) 1;
-  opacity: 0; filter: blur(2px);
-  transition: opacity 1.6s ease, filter 1.6s ease;
-}
-.bloom.is-in { opacity: 0.85; filter: none; }
-.bloom .sway {
-  transform-box: fill-box; transform-origin: 50% 100%;
-  animation: sway 7s ease-in-out var(--d) infinite alternate;
-}
-@keyframes sway { from { transform: rotate(-2.5deg); } to { transform: rotate(2.5deg) translateY(-2px); } }
 
 /* Header */
 .site-header {
@@ -260,13 +243,6 @@ address a:hover { border-color: var(--teal); color: var(--teal); }
   .atelier, .appointments { grid-template-columns: 1fr; }
   .facts { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 900px) {
-  .bloom { width: 120px !important; }
-  .bloom[style*="left:"] { left: -52px !important; }
-  .bloom[style*="right:"] { right: -52px !important; }
-  .bloom:nth-child(even) { display: none; }
-  .bloom.is-in { opacity: 0.45; }
-}
 @media (max-width: 520px) {
   .looks { gap: 12px; }
   .look--offset { margin-top: 48px; }
@@ -275,6 +251,5 @@ address a:hover { border-color: var(--teal); color: var(--teal); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .mat, .site-header, .bloom { transition: none; }
-  .bloom .sway { animation: none; }
+  .mat, .site-header { transition: none; }
 }

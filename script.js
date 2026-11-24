@@ -69,23 +69,3 @@ form.addEventListener("submit", (e) => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Embroidered background: blooms fade in when near, drift gently with scroll
-const blooms = [...document.querySelectorAll(".bloom")];
-const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-if ("IntersectionObserver" in window) {
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
-  }, { rootMargin: "0px 0px -8% 0px" });
-  blooms.forEach((b) => io.observe(b));
-} else {
-  blooms.forEach((b) => b.classList.add("is-in"));
-}
-if (!still) {
-  let ticking = false;
-  const drift = () => {
-    const y = window.scrollY;
-    blooms.forEach((b) => { b.style.translate = `0 ${(-y * parseFloat(b.style.getPropertyValue("--speed"))).toFixed(1)}px`; });
-    ticking = false;
-  };
-  window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(drift); } }, { passive: true });
-}
