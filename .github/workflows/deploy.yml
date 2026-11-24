@@ -25,10 +25,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Stage site files
         run: |
-          mkdir -p _site
-          cp index.html styles.css script.js _site/ 2>/dev/null || true
-          [ -d assets ] && cp -r assets _site/
-          [ -f CNAME ] && cp CNAME _site/
+          rsync -a --exclude='.git*' --exclude='.github' --exclude='docs' --exclude='README.md' --exclude='_site' ./ _site/
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
