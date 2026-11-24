@@ -1,18 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600">
-<defs>
-<radialGradient id="light" cx="0.38" cy="0.3" r="0.85"><stop offset="0" stop-color="#55684a" stop-opacity="0.9"/><stop offset="0.55" stop-color="#55684a" stop-opacity="0.25"/><stop offset="1" stop-color="#1a1d17" stop-opacity="0"/></radialGradient>
-<linearGradient id="gown" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#a9b38f"/><stop offset="0.6" stop-color="#55684a"/><stop offset="1" stop-color="#1a1d17"/></linearGradient>
-<filter id="canvas" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0.22 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
-<filter id="soft"><feGaussianBlur stdDeviation="7.2"/></filter>
-<filter id="brush"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.018" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="36"/></filter>
-</defs>
-<rect width="1200" height="1600" fill="#1a1d17"/>
-<rect width="1200" height="1600" fill="url(#light)"/>
-<g filter="url(#brush)">
-<ellipse cx="600" cy="320" rx="84" ry="104" fill="#a9b38f" fill-opacity="0.35" filter="url(#soft)"/>
-<path d="M480 480 Q600 416 720 480 L708 672 Q1032 1152 1080 1600 L96 1600 Q192 1120 492 672 Z" fill="url(#gown)" fill-opacity="0.85" filter="url(#soft)"/>
-<path d="M636 544 C 703 880, 194 1200, 261 1568" stroke="#1a1d17" stroke-opacity="0.06" stroke-width="32" fill="none" stroke-linecap="round"/><path d="M576 544 C 520 880, 367 1200, 312 1568" stroke="#a9b38f" stroke-opacity="0.08" stroke-width="23" fill="none" stroke-linecap="round"/><path d="M670 544 C 587 880, 423 1200, 339 1568" stroke="#a9b38f" stroke-opacity="0.07" stroke-width="33" fill="none" stroke-linecap="round"/><path d="M576 544 C 469 880, 529 1200, 422 1568" stroke="#1a1d17" stroke-opacity="0.13" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M667 544 C 607 880, 509 1200, 449 1568" stroke="#a9b38f" stroke-opacity="0.07" stroke-width="32" fill="none" stroke-linecap="round"/><path d="M658 544 C 631 880, 533 1200, 505 1568" stroke="#a9b38f" stroke-opacity="0.20" stroke-width="20" fill="none" stroke-linecap="round"/><path d="M628 544 C 716 880, 502 1200, 591 1568" stroke="#1a1d17" stroke-opacity="0.09" stroke-width="36" fill="none" stroke-linecap="round"/><path d="M549 544 C 569 880, 614 1200, 633 1568" stroke="#a9b38f" stroke-opacity="0.22" stroke-width="21" fill="none" stroke-linecap="round"/><path d="M666 544 C 562 880, 784 1200, 681 1568" stroke="#a9b38f" stroke-opacity="0.07" stroke-width="27" fill="none" stroke-linecap="round"/><path d="M532 544 C 414 880, 837 1200, 718 1568" stroke="#1a1d17" stroke-opacity="0.11" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M629 544 C 758 880, 649 1200, 778 1568" stroke="#a9b38f" stroke-opacity="0.09" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M545 544 C 465 880, 908 1200, 828 1568" stroke="#a9b38f" stroke-opacity="0.12" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M604 544 C 556 880, 942 1200, 894 1568" stroke="#1a1d17" stroke-opacity="0.10" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M595 544 C 651 880, 887 1200, 943 1568" stroke="#a9b38f" stroke-opacity="0.15" stroke-width="37" fill="none" stroke-linecap="round"/>
-</g>
-<rect width="1200" height="1600" fill="#000" filter="url(#canvas)"/>
-<text x="1140" y="1544" text-anchor="end" font-family="Georgia, serif" font-style="italic" font-size="29" fill="#a9b38f" fill-opacity="0.5">Look II — placeholder</text>
-</svg>
+<defs><radialGradient id="g" cx="0.4" cy="0.35" r="0.9"><stop offset="0" stop-color="#47513d"/><stop offset="1" stop-color="#2b3226"/></radialGradient></defs>
+<rect width="1200" height="1600" fill="url(#g)"/>
+<rect x="60.0" y="60.0" width="1080.0" height="1480.0" fill="none" stroke="#c9ab72" stroke-opacity="0.35" stroke-width="2"/>
+<g font-family="Georgia, serif" text-anchor="middle" fill="#efe7d8">
+<text x="600.0" y="780.0" font-size="66" font-style="italic" fill-opacity="0.8">Look II</text>
+<text x="600.0" y="860" font-size="26" letter-spacing="6" fill-opacity="0.5">IMAGE SLOT · 1200 × 1600</text>
+<text x="600.0" y="908" font-size="24" fill-opacity="0.4">assets/img/look-02</text>
+</g></svg>

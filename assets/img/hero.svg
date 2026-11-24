@@ -1,18 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2000" width="1600" height="2000">
-<defs>
-<radialGradient id="light" cx="0.38" cy="0.3" r="0.85"><stop offset="0" stop-color="#c9a77c" stop-opacity="0.9"/><stop offset="0.55" stop-color="#c9a77c" stop-opacity="0.25"/><stop offset="1" stop-color="#2a2018" stop-opacity="0"/></radialGradient>
-<linearGradient id="gown" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#e9dcc4"/><stop offset="0.6" stop-color="#c9a77c"/><stop offset="1" stop-color="#2a2018"/></linearGradient>
-<filter id="canvas" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0.22 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
-<filter id="soft"><feGaussianBlur stdDeviation="9.6"/></filter>
-<filter id="brush"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.018" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="48"/></filter>
-</defs>
-<rect width="1600" height="2000" fill="#2a2018"/>
-<rect width="1600" height="2000" fill="url(#light)"/>
-<g filter="url(#brush)">
-<ellipse cx="800" cy="400" rx="112" ry="130" fill="#e9dcc4" fill-opacity="0.35" filter="url(#soft)"/>
-<path d="M640 600 Q800 520 960 600 L944 840 Q1376 1440 1440 2000 L128 2000 Q256 1400 656 840 Z" fill="url(#gown)" fill-opacity="0.85" filter="url(#soft)"/>
-<path d="M731 680 C 560 1100, 518 1500, 347 1960" stroke="#2a2018" stroke-opacity="0.07" stroke-width="18" fill="none" stroke-linecap="round"/><path d="M889 680 C 806 1100, 487 1500, 405 1960" stroke="#e9dcc4" stroke-opacity="0.16" stroke-width="36" fill="none" stroke-linecap="round"/><path d="M798 680 C 622 1100, 667 1500, 491 1960" stroke="#e9dcc4" stroke-opacity="0.06" stroke-width="13" fill="none" stroke-linecap="round"/><path d="M743 680 C 760 1100, 515 1500, 532 1960" stroke="#2a2018" stroke-opacity="0.14" stroke-width="31" fill="none" stroke-linecap="round"/><path d="M826 680 C 877 1100, 562 1500, 614 1960" stroke="#e9dcc4" stroke-opacity="0.20" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M840 680 C 932 1100, 594 1500, 686 1960" stroke="#e9dcc4" stroke-opacity="0.13" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M788 680 C 831 1100, 702 1500, 745 1960" stroke="#2a2018" stroke-opacity="0.11" stroke-width="15" fill="none" stroke-linecap="round"/><path d="M787 680 C 669 1100, 971 1500, 853 1960" stroke="#e9dcc4" stroke-opacity="0.11" stroke-width="18" fill="none" stroke-linecap="round"/><path d="M767 680 C 636 1100, 1028 1500, 897 1960" stroke="#e9dcc4" stroke-opacity="0.09" stroke-width="21" fill="none" stroke-linecap="round"/><path d="M802 680 C 804 1100, 960 1500, 963 1960" stroke="#2a2018" stroke-opacity="0.17" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M811 680 C 752 1100, 1091 1500, 1033 1960" stroke="#e9dcc4" stroke-opacity="0.20" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M721 680 C 842 1100, 993 1500, 1113 1960" stroke="#e9dcc4" stroke-opacity="0.19" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M852 680 C 957 1100, 1089 1500, 1194 1960" stroke="#2a2018" stroke-opacity="0.13" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M886 680 C 734 1100, 1408 1500, 1256 1960" stroke="#e9dcc4" stroke-opacity="0.10" stroke-width="14" fill="none" stroke-linecap="round"/>
-</g>
-<rect width="1600" height="2000" fill="#000" filter="url(#canvas)"/>
-<text x="1540" y="1944" text-anchor="end" font-family="Georgia, serif" font-style="italic" font-size="38" fill="#e9dcc4" fill-opacity="0.5">Hero portrait — placeholder</text>
-</svg>
+<defs><radialGradient id="g" cx="0.4" cy="0.35" r="0.9"><stop offset="0" stop-color="#4a3a2b"/><stop offset="1" stop-color="#2e241b"/></radialGradient></defs>
+<rect width="1600" height="2000" fill="url(#g)"/>
+<rect x="80.0" y="80.0" width="1440.0" height="1840.0" fill="none" stroke="#c9ab72" stroke-opacity="0.35" stroke-width="2"/>
+<g font-family="Georgia, serif" text-anchor="middle" fill="#efe7d8">
+<text x="800.0" y="980.0" font-size="88" font-style="italic" fill-opacity="0.8">Hero image</text>
+<text x="800.0" y="1080" font-size="35" letter-spacing="6" fill-opacity="0.5">IMAGE SLOT · 1600 × 2000</text>
+<text x="800.0" y="1144" font-size="32" fill-opacity="0.4">assets/img/hero</text>
+</g></svg>
