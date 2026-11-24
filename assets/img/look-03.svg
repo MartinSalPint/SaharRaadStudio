@@ -1,7 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
-<defs><linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#efe7dc"/><stop offset="1" stop-color="#c2ad96"/></linearGradient>
-<radialGradient id="l" cx="0.35" cy="0.25" r="0.8"><stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
-<rect width="1200" height="1500" fill="url(#g)"/><rect width="1200" height="1500" fill="url(#l)"/>
-<path d="M540.0 270.0 q60 -50 120 0 l40 300.0 q216.0 525.0 264.0 930.0 l-608.0 0 q48.0 -405.0 264.0 -930.0 z" fill="#2a2522" fill-opacity="0.08"/>
-<text x="600.0" y="1420" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="8" fill="#2a2522" fill-opacity="0.55">LOOK 03 · PLACEHOLDER</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600">
+<defs>
+<radialGradient id="light" cx="0.38" cy="0.3" r="0.85"><stop offset="0" stop-color="#c8a6a0" stop-opacity="0.9"/><stop offset="0.55" stop-color="#c8a6a0" stop-opacity="0.25"/><stop offset="1" stop-color="#261d18" stop-opacity="0"/></radialGradient>
+<linearGradient id="gown" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#efd9d2"/><stop offset="0.6" stop-color="#c8a6a0"/><stop offset="1" stop-color="#261d18"/></linearGradient>
+<filter id="canvas" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0.22 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="7.2"/></filter>
+<filter id="brush"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.018" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="36"/></filter>
+</defs>
+<rect width="1200" height="1600" fill="#261d18"/>
+<rect width="1200" height="1600" fill="url(#light)"/>
+<g filter="url(#brush)">
+<ellipse cx="600" cy="320" rx="84" ry="104" fill="#efd9d2" fill-opacity="0.35" filter="url(#soft)"/>
+<path d="M480 480 Q600 416 720 480 L708 672 Q1032 1152 1080 1600 L96 1600 Q192 1120 492 672 Z" fill="url(#gown)" fill-opacity="0.85" filter="url(#soft)"/>
+<path d="M560 544 C 654 880, 144 1200, 238 1568" stroke="#261d18" stroke-opacity="0.15" stroke-width="21" fill="none" stroke-linecap="round"/><path d="M631 544 C 632 880, 303 1200, 305 1568" stroke="#efd9d2" stroke-opacity="0.19" stroke-width="36" fill="none" stroke-linecap="round"/><path d="M559 544 C 550 880, 374 1200, 365 1568" stroke="#efd9d2" stroke-opacity="0.09" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M586 544 C 653 880, 334 1200, 402 1568" stroke="#261d18" stroke-opacity="0.20" stroke-width="23" fill="none" stroke-linecap="round"/><path d="M629 544 C 768 880, 325 1200, 464 1568" stroke="#efd9d2" stroke-opacity="0.20" stroke-width="13" fill="none" stroke-linecap="round"/><path d="M593 544 C 559 880, 533 1200, 499 1568" stroke="#efd9d2" stroke-opacity="0.08" stroke-width="20" fill="none" stroke-linecap="round"/><path d="M562 544 C 588 880, 539 1200, 564 1568" stroke="#261d18" stroke-opacity="0.16" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M537 544 C 564 880, 612 1200, 639 1568" stroke="#efd9d2" stroke-opacity="0.07" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M653 544 C 602 880, 733 1200, 681 1568" stroke="#efd9d2" stroke-opacity="0.07" stroke-width="31" fill="none" stroke-linecap="round"/><path d="M546 544 C 590 880, 682 1200, 726 1568" stroke="#261d18" stroke-opacity="0.09" stroke-width="25" fill="none" stroke-linecap="round"/><path d="M635 544 C 677 880, 731 1200, 774 1568" stroke="#efd9d2" stroke-opacity="0.14" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M562 544 C 464 880, 937 1200, 840 1568" stroke="#efd9d2" stroke-opacity="0.20" stroke-width="30" fill="none" stroke-linecap="round"/><path d="M531 544 C 638 880, 783 1200, 890 1568" stroke="#261d18" stroke-opacity="0.06" stroke-width="37" fill="none" stroke-linecap="round"/><path d="M577 544 C 688 880, 840 1200, 951 1568" stroke="#efd9d2" stroke-opacity="0.20" stroke-width="33" fill="none" stroke-linecap="round"/>
+</g>
+<rect width="1200" height="1600" fill="#000" filter="url(#canvas)"/>
+<text x="1140" y="1544" text-anchor="end" font-family="Georgia, serif" font-style="italic" font-size="29" fill="#efd9d2" fill-opacity="0.5">Look III — placeholder</text>
 </svg>

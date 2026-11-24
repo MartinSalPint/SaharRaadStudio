@@ -11,3 +11,7 @@ Anything marked `PLACEHOLDER` in the source (copy, collection name, bio, address
 The enquiry form has no backend: it opens the visitor's email app pre-filled. Swap for Formspree/Netlify Forms later if wanted.
 
 Run locally: `python3 -m http.server` and open http://localhost:8000.
+
+## Design direction
+
+19th-century salon portraiture (painters who rendered satin, velvet and lace in oil) meets nature: primed-linen ground with canvas grain, varnish-dark hero, moss-green atelier section, gilt frames around every image, museum wall-label captions, laurel-sprig ornaments. Fonts: Cormorant Garamond / Cormorant SC (display) and EB Garamond (text).

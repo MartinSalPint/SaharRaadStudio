@@ -11,10 +11,25 @@
   <meta property="og:image" content="assets/img/hero.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant+SC:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Botanical ornament (laurel/olive sprig), reused as section dividers -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="sprig" viewBox="0 0 240 40">
+      <path d="M8 20 H232" stroke="currentColor" stroke-width="0.8" fill="none"/>
+      <g fill="none" stroke="currentColor" stroke-width="0.8">
+        <path d="M120 20 c-6 -10 -2 -16 6 -18 c2 8 -1 14 -6 18z"/>
+        <path d="M120 20 c-6 10 -2 16 6 18 c2 -8 -1 -14 -6 -18z"/>
+        <path d="M100 20 c-8 -6 -8 -13 -2 -17 c5 5 6 11 2 17z"/><path d="M100 20 c-8 6 -8 13 -2 17 c5 -5 6 -11 2 -17z"/>
+        <path d="M140 20 c8 -6 8 -13 2 -17 c-5 5 -6 11 -2 17z"/><path d="M140 20 c8 6 8 13 2 17 c-5 -5 -6 -11 -2 -17z"/>
+        <path d="M82 20 c-7 -4 -8 -10 -4 -13 c4 3 5 8 4 13z"/><path d="M82 20 c-7 4 -8 10 -4 13 c4 -3 5 -8 4 -13z"/>
+        <path d="M158 20 c7 -4 8 -10 4 -13 c-4 3 -5 8 -4 13z"/><path d="M158 20 c7 4 8 10 4 13 c-4 -3 -5 -8 -4 -13z"/>
+      </g>
+      <circle cx="120" cy="20" r="2" fill="currentColor"/>
+    </symbol>
+  </svg>
 
   <header class="site-header" id="top">
     <a class="wordmark" href="#top" aria-label="Sahar Raad, home">Sahar Raad</a>
@@ -29,15 +44,15 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <figure class="hero-media">
+      <figure class="hero-media frame">
         <!-- PLACEHOLDER: replace with a full-bleed campaign image (portrait, ~1600x2000) -->
         <img src="assets/img/hero.svg" alt="Placeholder for hero campaign image" fetchpriority="high">
       </figure>
       <div class="hero-text">
-        <p class="eyebrow">Couture · Made to measure</p>
+        <p class="eyebrow">Haute couture · Atelier</p>
         <h1>Sahar Raad</h1>
         <!-- PLACEHOLDER: tagline is a guess -->
-        <p class="lede"><em>Garments built slowly, by hand, for one person at a time.</em></p>
+        <p class="lede"><em>Silk, velvet and lace, worked by hand the way the old masters painted them: slowly, in layers, from life.</em></p>
         <a class="link-cta" href="#collection">View the collection</a>
       </div>
     </section>
@@ -45,64 +60,66 @@
     <!-- COLLECTION -->
     <section class="collection" id="collection" aria-labelledby="collection-title">
       <div class="section-head">
-        <p class="eyebrow">Collection</p>
+        <svg class="sprig" aria-hidden="true"><use href="#sprig"/></svg>
+        <p class="eyebrow">The collection</p>
         <!-- PLACEHOLDER: collection name and season are guesses -->
-        <h2 id="collection-title">Autumn / Winter 2026: <em>Quiet Hours</em></h2>
+        <h2 id="collection-title">Autumn / Winter 2026<br><em>Quiet Hours</em></h2>
         <p class="section-intro">Placeholder text. A short note on the collection: the idea behind it, the fabrics, the mood. Two or three sentences at most.</p>
       </div>
 
       <ol class="gallery">
         <li class="look look--tall">
-          <button class="look-open" data-full="assets/img/look-01.svg" data-caption="Look 01 · Silk faille column gown (placeholder)">
+          <button class="look-open frame" data-full="assets/img/look-01.svg" data-caption="I. Silk faille column gown (placeholder)">
             <img src="assets/img/look-01.svg" alt="Placeholder for look 01" loading="lazy">
           </button>
-          <p class="caption"><span>01</span> Silk faille column gown</p>
+          <p class="caption"><span class="num">I.</span> <span class="title">Silk faille column gown</span><span class="medium">Ivory silk faille, hand-rolled hems · 2026</span></p>
         </li>
         <li class="look look--offset">
-          <button class="look-open" data-full="assets/img/look-02.svg" data-caption="Look 02 · Wool crepe tailored coat (placeholder)">
+          <button class="look-open frame" data-full="assets/img/look-02.svg" data-caption="II. Wool crepe tailored coat (placeholder)">
             <img src="assets/img/look-02.svg" alt="Placeholder for look 02" loading="lazy">
           </button>
-          <p class="caption"><span>02</span> Wool crepe tailored coat</p>
+          <p class="caption"><span class="num">II.</span> <span class="title">Wool crepe tailored coat</span><span class="medium">Moss wool crepe, horn buttons · 2026</span></p>
         </li>
         <li class="look">
-          <button class="look-open" data-full="assets/img/look-03.svg" data-caption="Look 03 · Hand-pleated organza blouse (placeholder)">
+          <button class="look-open frame" data-full="assets/img/look-03.svg" data-caption="III. Hand-pleated organza blouse (placeholder)">
             <img src="assets/img/look-03.svg" alt="Placeholder for look 03" loading="lazy">
           </button>
-          <p class="caption"><span>03</span> Hand-pleated organza blouse</p>
+          <p class="caption"><span class="num">III.</span> <span class="title">Hand-pleated organza blouse</span><span class="medium">Blush silk organza, pleated by hand · 2026</span></p>
         </li>
         <li class="look look--wide">
-          <button class="look-open" data-full="assets/img/look-04.svg" data-caption="Look 04 · Velvet draped evening dress (placeholder)">
+          <button class="look-open frame" data-full="assets/img/look-04.svg" data-caption="IV. Velvet draped evening dress (placeholder)">
             <img src="assets/img/look-04.svg" alt="Placeholder for look 04" loading="lazy">
           </button>
-          <p class="caption"><span>04</span> Velvet draped evening dress</p>
+          <p class="caption"><span class="num">IV.</span> <span class="title">Velvet draped evening dress</span><span class="medium">Oxblood silk velvet, bias draped · 2026</span></p>
         </li>
         <li class="look look--offset">
-          <button class="look-open" data-full="assets/img/look-05.svg" data-caption="Look 05 · Embroidered tulle overlay (placeholder)">
+          <button class="look-open frame" data-full="assets/img/look-05.svg" data-caption="V. Embroidered tulle overlay (placeholder)">
             <img src="assets/img/look-05.svg" alt="Placeholder for look 05" loading="lazy">
           </button>
-          <p class="caption"><span>05</span> Embroidered tulle overlay</p>
+          <p class="caption"><span class="num">V.</span> <span class="title">Embroidered tulle overlay</span><span class="medium">Tulle with botanical embroidery · 2026</span></p>
         </li>
         <li class="look">
-          <button class="look-open" data-full="assets/img/look-06.svg" data-caption="Look 06 · Black duchesse satin suit (placeholder)">
+          <button class="look-open frame" data-full="assets/img/look-06.svg" data-caption="VI. Black duchesse satin suit (placeholder)">
             <img src="assets/img/look-06.svg" alt="Placeholder for look 06" loading="lazy">
           </button>
-          <p class="caption"><span>06</span> Black duchesse satin suit</p>
+          <p class="caption"><span class="num">VI.</span> <span class="title">Black duchesse satin suit</span><span class="medium">Duchesse satin, hand-finished lapels · 2026</span></p>
         </li>
       </ol>
     </section>
 
     <!-- ABOUT -->
     <section class="atelier" id="atelier" aria-labelledby="atelier-title">
-      <figure class="atelier-media">
+      <figure class="atelier-media frame">
         <!-- PLACEHOLDER: portrait of Sahar in the studio -->
         <img src="assets/img/atelier.svg" alt="Placeholder for portrait of Sahar Raad in her atelier" loading="lazy">
       </figure>
       <div class="atelier-text">
+        <svg class="sprig" aria-hidden="true"><use href="#sprig"/></svg>
         <p class="eyebrow">The atelier</p>
         <h2 id="atelier-title">Every piece begins<br>with a <em>conversation</em>.</h2>
         <!-- PLACEHOLDER: entire bio is a guess, replace with Sahar's own words -->
         <p>Placeholder bio. Sahar Raad is a couture designer working from her studio in [city]. Trained in [school / house], she founded her atelier in [year] to make garments the old way: drafted by hand, fitted on the body, finished by a small team.</p>
-        <p>Each commission takes several fittings over a number of weeks. Fabrics are sourced from [mills / regions], and every piece is signed and numbered.</p>
+        <p>Her references are the portrait painters of the nineteenth-century salon, who could make satin shine and lace breathe in oil, and the garden: leaf, moss, petal and bark. Each commission takes several fittings over a number of weeks. Fabrics are sourced from [mills / regions], and every piece is signed and numbered.</p>
         <dl class="facts">
           <div><dt>Founded</dt><dd>[Year]</dd></div>
           <div><dt>Studio</dt><dd>[City]</dd></div>
@@ -114,6 +131,7 @@
     <!-- CONTACT -->
     <section class="appointments" id="appointments" aria-labelledby="appt-title">
       <div class="appt-intro">
+        <svg class="sprig" aria-hidden="true"><use href="#sprig"/></svg>
         <p class="eyebrow">Private appointments</p>
         <h2 id="appt-title">Visit the <em>atelier</em></h2>
         <p>Consultations are by appointment only. Tell us a little about what you have in mind and we will reply within two working days. <span class="note">(Placeholder: confirm reply time.)</span></p>
@@ -171,7 +189,7 @@
   <dialog class="lightbox" id="lightbox" aria-label="Look detail">
     <button class="lightbox-close" aria-label="Close">Close</button>
     <figure>
-      <img src="" alt="">
+      <div class="frame"><img src="" alt=""></div>
       <figcaption></figcaption>
     </figure>
   </dialog>

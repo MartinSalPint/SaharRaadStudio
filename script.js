@@ -17,6 +17,12 @@ nav.addEventListener("click", (e) => {
   }
 });
 
+// Header turns solid once past the hero
+const header = document.querySelector(".site-header");
+const onScroll = () => header.classList.toggle("is-solid", window.scrollY > window.innerHeight * 0.6);
+window.addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
 // Lightbox for collection looks
 const box = document.getElementById("lightbox");
 const boxImg = box.querySelector("img");
