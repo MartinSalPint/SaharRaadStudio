@@ -155,8 +155,8 @@ h2 em { font: inherit; font-style: normal; text-transform: inherit; letter-spaci
 .chapter--stone { --tint: #a08a6c; }
 
 /* Intro and outro films */
-.intro { position: relative; height: 100svh; min-height: 480px; background: #1d1915; overflow: hidden; }
-.intro-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.intro { position: relative; line-height: 0; background: #1d1915; overflow: hidden; }
+.intro-video { display: block; width: 100%; height: auto; max-height: 90svh; object-fit: cover; }
 .intro::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(20,16,12,0.35), transparent 25%, transparent 75%, rgba(20,16,12,0.35)); pointer-events: none; }
 .intro-cue {
   position: absolute; left: 50%; bottom: 28px; translate: -50% 0; z-index: 1;
@@ -165,6 +165,7 @@ h2 em { font: inherit; font-style: normal; text-transform: inherit; letter-spaci
 }
 .intro-cue::after { content: ""; position: absolute; left: 50%; bottom: 0; width: 1px; height: 20px; background: #fff; animation: cue 2.2s ease-in-out infinite; }
 @keyframes cue { 0%,100% { opacity: 0.3; transform: scaleY(0.6); } 50% { opacity: 1; transform: scaleY(1); } }
+.intro + .hero { padding-top: clamp(48px, 7vw, 96px); min-height: auto; }
 .outro { line-height: 0; background: #1d1915; }
 .outro video { width: 100%; max-height: 90svh; object-fit: cover; }
 .site-header:not(.is-solid) .wordmark, .site-header:not(.is-solid) .nav a { color: #fff; text-shadow: 0 1px 8px rgba(0,0,0,0.25); }
@@ -272,6 +273,9 @@ address a:hover { border-color: var(--teal); color: var(--teal); }
   .hero-rose { right: -4%; }
   .chapter { grid-template-columns: 1fr; }
   .strip { grid-template-columns: 1fr 1fr; }
+  .intro { margin-top: 52px; }
+  .intro + .hero { padding-top: 32px; }
+  .intro-cue { display: none; }
   .site-header:not(.is-solid) .wordmark { color: var(--taupe); text-shadow: none; }
   .site-header:not(.is-solid) .nav a { color: var(--ink); text-shadow: none; }
   .chapter-head { position: static; }

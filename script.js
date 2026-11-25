@@ -18,8 +18,10 @@ nav.addEventListener("click", (e) => {
 
 // Header turns solid once past the hero
 const header = document.querySelector(".site-header");
-const onScroll = () => header.classList.toggle("is-solid", window.scrollY > window.innerHeight * 0.85);
+const intro = document.querySelector(".intro");
+const onScroll = () => header.classList.toggle("is-solid", window.scrollY > (intro ? intro.offsetHeight - header.offsetHeight : 0));
 window.addEventListener("scroll", onScroll, { passive: true });
+window.addEventListener("resize", onScroll);
 onScroll();
 
 // Lightbox for collection looks
