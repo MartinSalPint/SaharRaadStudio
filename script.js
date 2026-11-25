@@ -97,3 +97,27 @@ if ("IntersectionObserver" in window) {
 } else {
   lazyVideos.forEach((v) => { v.autoplay = true; });
 }
+
+// Background music: never autoplays (browsers block sound without a click); fades in and out.
+const ambient = document.getElementById("ambient");
+const soundBtn = document.querySelector(".sound-toggle");
+if (ambient && soundBtn) {
+  fetch(ambient.getAttribute("src"), { method: "HEAD" })
+    .then((r) => { if (r.ok) soundBtn.hidden = false; })
+    .catch(() => {});
+  let fadeTimer;
+  const fadeTo = (target, done) => {
+    clearInterval(fadeTimer);
+    fadeTimer = setInterval(() => {
+      const v = ambient.volume + (target > ambient.volume ? 0.02 : -0.02);
+      if (Math.abs(target - ambient.volume) <= 0.02) { ambient.volume = target; clearInterval(fadeTimer); if (done) done(); }
+      else ambient.volume = Math.min(1, Math.max(0, v));
+    }, 60);
+  };
+  soundBtn.addEventListener("click", () => {
+    const on = soundBtn.getAttribute("aria-pressed") !== "true";
+    soundBtn.setAttribute("aria-pressed", String(on));
+    if (on) { ambient.volume = 0; ambient.play().then(() => fadeTo(0.35)).catch(() => soundBtn.setAttribute("aria-pressed", "false")); }
+    else fadeTo(0, () => ambient.pause());
+  });
+}
