@@ -245,7 +245,11 @@ address a:hover { border-color: var(--teal); color: var(--teal); }
 .lightbox::backdrop { background: transparent; }
 .lightbox figure { margin: 0; padding: 64px 16px 24px; display: flex; flex-direction: column; align-items: center; }
 .lightbox .mat { display: inline-block; transform: none; }
-.lightbox img { max-height: calc(100vh - 190px); width: auto; }
+.lightbox img, .lightbox video { display: block; max-height: calc(100svh - 190px); max-width: calc(100vw - 64px); width: auto; height: auto; }
+.lightbox [hidden] { display: none; }
+.look-open--video { cursor: zoom-in; }
+.look-open--video .mat { position: relative; }
+.look-open--video .mat::after { content: ""; position: absolute; right: 18px; bottom: 30px; width: 30px; height: 30px; border-radius: 50%; background: rgba(244,240,234,0.85) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b332c' stroke-width='1.5'%3E%3Cpath d='M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7'/%3E%3C/svg%3E") center / 14px no-repeat; }
 .lightbox figcaption { margin-top: 1.2rem; font: italic 400 1.2rem/1.3 var(--serif); text-align: center; color: var(--muted); }
 .lightbox-close {
   position: absolute; top: 20px; right: var(--gutter); background: none; border: 0; cursor: pointer; color: var(--ink);

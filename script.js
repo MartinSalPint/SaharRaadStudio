@@ -26,14 +26,27 @@ onScroll();
 const box = document.getElementById("lightbox");
 const boxImg = box.querySelector("img");
 const boxCap = box.querySelector("figcaption");
+const boxVid = box.querySelector(".lb-video");
 document.querySelectorAll(".look-open").forEach((btn) => {
   btn.addEventListener("click", () => {
-    boxImg.src = btn.dataset.full;
-    boxImg.alt = btn.dataset.caption;
+    const isVideo = Boolean(btn.dataset.video);
+    boxImg.hidden = isVideo;
+    boxVid.hidden = !isVideo;
+    if (isVideo) {
+      boxImg.removeAttribute("src");
+      boxVid.poster = btn.dataset.poster || "";
+      boxVid.src = btn.dataset.video;
+      boxVid.setAttribute("aria-label", btn.dataset.caption);
+    } else {
+      boxImg.src = btn.dataset.full;
+      boxImg.alt = btn.dataset.caption;
+    }
     boxCap.textContent = btn.dataset.caption;
     box.showModal();
+    if (isVideo) boxVid.play().catch(() => {});
   });
 });
+box.addEventListener("close", () => { boxVid.pause(); boxVid.removeAttribute("src"); boxVid.load(); });
 box.querySelector(".lightbox-close").addEventListener("click", () => box.close());
 box.addEventListener("click", (e) => { if (e.target === box) box.close(); });
 
