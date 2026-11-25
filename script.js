@@ -1,4 +1,5 @@
-const STUDIO_EMAIL = "saharrraad2000@gmail.com";
+// TEMP (testing): enquiries go to Martin until launch. Switch back to saharrraad2000@gmail.com.
+const STUDIO_EMAIL = "martinsalpint@gmail.com";
 
 // Mobile menu
 const toggle = document.querySelector(".nav-toggle");
