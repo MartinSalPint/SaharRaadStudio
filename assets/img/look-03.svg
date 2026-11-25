@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600">
-<defs><radialGradient id="g" cx="0.4" cy="0.35" r="0.9"><stop offset="0" stop-color="#f4e6e1"/><stop offset="1" stop-color="#e8cbc5"/></radialGradient></defs>
-<rect width="1200" height="1600" fill="url(#g)"/>
-<rect x="54.0" y="54.0" width="1092.0" height="1492.0" fill="none" stroke="#8b7b6a" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="10 8"/>
-<g font-family="Georgia, serif" text-anchor="middle" fill="#6f6253">
-<text x="600.0" y="782" font-size="60" font-style="italic" fill-opacity="0.85">In Bloom · Look 1</text>
-<text x="600.0" y="854" font-size="24" letter-spacing="6" fill-opacity="0.6">IMAGE SLOT · 1200 × 1600</text>
-<text x="600.0" y="896" font-size="22" fill-opacity="0.5">assets/img/look-03</text>
-</g></svg>

@@ -18,7 +18,7 @@ nav.addEventListener("click", (e) => {
 
 // Header turns solid once past the hero
 const header = document.querySelector(".site-header");
-const onScroll = () => header.classList.toggle("is-solid", window.scrollY > window.innerHeight * 0.6);
+const onScroll = () => header.classList.toggle("is-solid", window.scrollY > window.innerHeight * 0.85);
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
@@ -69,3 +69,16 @@ form.addEventListener("submit", (e) => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+
+// Collection films play only while on screen
+const lazyVideos = document.querySelectorAll("video[data-autoplay]");
+if ("IntersectionObserver" in window) {
+  const vio = new IntersectionObserver((entries) => {
+    entries.forEach(({ target, isIntersecting }) => {
+      if (isIntersecting) { target.preload = "auto"; target.play().catch(() => {}); } else { target.pause(); }
+    });
+  }, { threshold: 0.25 });
+  lazyVideos.forEach((v) => vio.observe(v));
+} else {
+  lazyVideos.forEach((v) => { v.autoplay = true; });
+}

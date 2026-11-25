@@ -7,7 +7,7 @@
     <meta name="description" content="Sahar Raad, fashion designer based in Beirut. Couture shaped by historical elegance and the garden, made by hand.">
   <meta property="og:title" content="Sahar Raad · Fashion Design">
   <meta property="og:description" content="Couture gowns inspired by historical elegance and nature. Private appointments by request.">
-  <meta property="og:image" content="assets/img/hero.svg">
+  <meta property="og:image" content="assets/img/bridal/full-800.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -49,12 +49,17 @@
   </header>
 
   <main>
+    <!-- INTRO film -->
+    <section class="intro" aria-label="Introduction film">
+      <video class="intro-video" autoplay muted loop playsinline preload="auto" poster="assets/video/intro-poster.jpg"><source src="assets/video/intro.mp4" type="video/mp4"></video>
+      <a class="intro-cue" href="#top-hero">Enter</a>
+    </section>
+
     <!-- HERO: collage, like the portfolio cover -->
-    <section class="hero">
+    <section class="hero" id="top-hero">
       <div class="hero-collage">
         <figure class="hero-media torn">
-          <!-- IMAGE SLOT: lead campaign photo of a finished gown (portrait 4:5) -->
-          <img src="assets/img/hero.svg" alt="Image slot for the lead campaign photograph" fetchpriority="high">
+          <img src="assets/img/bridal/full-800.jpg" srcset="assets/img/bridal/full-800.jpg 800w, assets/img/bridal/full.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The bridal gown under a stone arch in the garden" fetchpriority="high">
         </figure>
       </div>
       <div class="hero-text">
@@ -66,16 +71,15 @@
       <div class="rule-name" aria-hidden="true"><span>Couture · Made by hand</span></div>
     </section>
 
-    <!-- COLLECTIONS: her three collections, each with its own colour story -->
+    <!-- COLLECTIONS: her four pieces, each with its own colour story -->
     <section class="collections" id="collections" aria-labelledby="collections-title">
       <div class="section-head">
         <svg class="sprig" aria-hidden="true"><use href="#sprig"/></svg>
         <p class="eyebrow">Collections</p>
-        <h2 id="collections-title">Three <em>stories</em></h2>
+        <h2 id="collections-title">Four <em>stories</em></h2>
         <p class="section-intro">Each one grown from a single feeling.</p>
       </div>
 
-      <!-- Chapter 1 -->
       <article class="chapter chapter--sage" aria-labelledby="ch1">
         <header class="chapter-head">
           <p class="chapter-num">I.</p>
@@ -87,23 +91,55 @@
             <li style="--c:#fbf3e2" title="Cream"></li>
           </ul>
         </header>
+        <div class="chapter-body">
         <ol class="looks">
-          <li class="look">
-            <button class="look-open" data-full="assets/img/look-01.svg" data-caption="The Fairy Tale · Look 1 (image slot)">
-              <span class="mat"><img src="assets/img/look-01.svg" alt="Image slot for The Fairy Tale, look 1" loading="lazy"></span>
+          <li class="look look--lead">
+            <button class="look-open" data-full="assets/img/fairy-tale/look-1.jpg" data-caption="The Fairy Tale, in the garden">
+              <span class="mat"><img src="assets/img/fairy-tale/look-1-800.jpg" srcset="assets/img/fairy-tale/look-1-800.jpg 800w, assets/img/fairy-tale/look-1.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The Fairy Tale, in the garden" loading="lazy"></span>
             </button>
-            <p class="caption"><span class="title">Look 1</span><span class="medium">A forest, remembered</span></p>
+            <p class="caption"><span class="medium">A forest, remembered</span></p>
           </li>
-          <li class="look look--offset">
-            <button class="look-open" data-full="assets/img/look-02.svg" data-caption="The Fairy Tale · Detail (image slot)">
-              <span class="mat"><img src="assets/img/look-02.svg" alt="Image slot for The Fairy Tale, detail" loading="lazy"></span>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/fairy-tale/look-2.jpg" data-caption="The Fairy Tale, seated">
+              <span class="mat"><img src="assets/img/fairy-tale/look-2-800.jpg" srcset="assets/img/fairy-tale/look-2-800.jpg 800w, assets/img/fairy-tale/look-2.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The Fairy Tale, seated" loading="lazy"></span>
             </button>
-            <p class="caption"><span class="title">Detail</span><span class="medium">Filtered light</span></p>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/fairy-tale/look-3.jpg" data-caption="The Fairy Tale, among the drapes">
+              <span class="mat"><img src="assets/img/fairy-tale/look-3-800.jpg" srcset="assets/img/fairy-tale/look-3-800.jpg 800w, assets/img/fairy-tale/look-3.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The Fairy Tale, among the drapes" loading="lazy"></span>
+            </button>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/fairy-tale/detail-1.jpg" data-caption="The Fairy Tale, detail">
+              <span class="mat"><img src="assets/img/fairy-tale/detail-1-800.jpg" srcset="assets/img/fairy-tale/detail-1-800.jpg 800w, assets/img/fairy-tale/detail-1.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The Fairy Tale, detail" loading="lazy"></span>
+            </button>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/fairy-tale/detail-2.jpg" data-caption="The Fairy Tale, detail in motion">
+              <span class="mat"><img src="assets/img/fairy-tale/detail-2-800.jpg" srcset="assets/img/fairy-tale/detail-2-800.jpg 800w, assets/img/fairy-tale/detail-2.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The Fairy Tale, detail in motion" loading="lazy"></span>
+            </button>
+            <p class="caption"><span class="medium">Filtered light</span></p>
           </li>
         </ol>
+        <div class="strip-wrap">
+          <p class="strip-label">Worn · on her engagement day</p>
+          <ol class="strip">
+            <li><button class="look-open" data-full="assets/img/fairy-tale/worn-1.jpg" data-caption="The Fairy Tale, worn on her engagement day"><span class="mat"><img src="assets/img/fairy-tale/worn-1-800.jpg" alt="The Fairy Tale, worn on her engagement day" loading="lazy"></span></button></li>
+            <li><button class="look-open" data-full="assets/img/fairy-tale/worn-2.jpg" data-caption="The Fairy Tale, worn on her engagement day"><span class="mat"><img src="assets/img/fairy-tale/worn-2-800.jpg" alt="The Fairy Tale, worn on her engagement day" loading="lazy"></span></button></li>
+            <li><button class="look-open" data-full="assets/img/fairy-tale/worn-3.jpg" data-caption="The Fairy Tale, worn by the river"><span class="mat"><img src="assets/img/fairy-tale/worn-3-800.jpg" alt="The Fairy Tale, worn by the river" loading="lazy"></span></button></li>
+            <li><span class="mat"><video data-autoplay muted loop playsinline preload="none" poster="assets/video/fairy-tale-worn-poster.jpg" aria-label="The Fairy Tale sleeve in the wind"><source src="assets/video/fairy-tale-worn.mp4" type="video/mp4"></video></span></li>
+          </ol>
+        </div>
+        <div class="strip-wrap">
+          <p class="strip-label">From the atelier</p>
+          <ol class="strip">
+            <li><button class="look-open" data-full="assets/img/fairy-tale/moodboard.jpg" data-caption="The Fairy Tale moodboard"><span class="mat"><img src="assets/img/fairy-tale/moodboard-800.jpg" alt="The Fairy Tale moodboard" loading="lazy"></span></button><span>Moodboard</span></li>
+            <li><button class="look-open" data-full="assets/img/fairy-tale/sketch.jpg" data-caption="The Fairy Tale sketches"><span class="mat"><img src="assets/img/fairy-tale/sketch-800.jpg" alt="The Fairy Tale sketches" loading="lazy"></span></button><span>Sketch</span></li>
+          </ol>
+        </div>
+        </div>
       </article>
 
-      <!-- Chapter 2 -->
       <article class="chapter chapter--blush" aria-labelledby="ch2">
         <header class="chapter-head">
           <p class="chapter-num">II.</p>
@@ -115,23 +151,30 @@
             <li style="--c:#fbf3e2" title="Warm cream, like old silk"></li>
           </ul>
         </header>
+        <div class="chapter-body">
         <ol class="looks">
-          <li class="look">
-            <button class="look-open" data-full="assets/img/look-03.svg" data-caption="In Bloom · Look 1 (image slot)">
-              <span class="mat"><img src="assets/img/look-03.svg" alt="Image slot for In Bloom, look 1" loading="lazy"></span>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/in-bloom/look-1.jpg" data-caption="In Bloom">
+              <span class="mat"><img src="assets/img/in-bloom/look-1-800.jpg" srcset="assets/img/in-bloom/look-1-800.jpg 800w, assets/img/in-bloom/look-1.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="In Bloom" loading="lazy"></span>
             </button>
-            <p class="caption"><span class="title">Look 1</span><span class="medium">Petals, opening</span></p>
+            <p class="caption"><span class="medium">Petals, opening</span></p>
           </li>
-          <li class="look look--offset">
-            <button class="look-open" data-full="assets/img/look-04.svg" data-caption="In Bloom · Detail (image slot)">
-              <span class="mat"><img src="assets/img/look-04.svg" alt="Image slot for In Bloom, detail" loading="lazy"></span>
-            </button>
-            <p class="caption"><span class="title">Detail</span><span class="medium">Roses, growing</span></p>
+          <li class="look look--video ">
+            <span class="mat"><video data-autoplay muted loop playsinline preload="none" poster="assets/video/in-bloom-poster.jpg" aria-label="In Bloom in motion"><source src="assets/video/in-bloom.mp4" type="video/mp4"></video></span>
           </li>
         </ol>
+        <div class="strip-wrap">
+          <p class="strip-label">From the atelier</p>
+          <ol class="strip">
+            <li><button class="look-open" data-full="assets/img/in-bloom/moodboard.jpg" data-caption="In Bloom moodboard"><span class="mat"><img src="assets/img/in-bloom/moodboard-800.jpg" alt="In Bloom moodboard" loading="lazy"></span></button><span>Moodboard</span></li>
+            <li><button class="look-open" data-full="assets/img/in-bloom/sketch.jpg" data-caption="In Bloom sketches"><span class="mat"><img src="assets/img/in-bloom/sketch-800.jpg" alt="In Bloom sketches" loading="lazy"></span></button><span>Sketch</span></li>
+            <li><button class="look-open" data-full="assets/img/in-bloom/sketch-2.jpg" data-caption="In Bloom on the studio wall"><span class="mat"><img src="assets/img/in-bloom/sketch-2-800.jpg" alt="In Bloom on the studio wall" loading="lazy"></span></button><span>Studio</span></li>
+            <li><button class="look-open" data-full="assets/img/in-bloom/process.jpg" data-caption="In Bloom roses"><span class="mat"><img src="assets/img/in-bloom/process-800.jpg" alt="In Bloom roses" loading="lazy"></span></button><span>Roses, growing</span></li>
+          </ol>
+        </div>
+        </div>
       </article>
 
-      <!-- Chapter 3 -->
       <article class="chapter chapter--teal" aria-labelledby="ch3">
         <header class="chapter-head">
           <p class="chapter-num">III.</p>
@@ -144,20 +187,92 @@
             <li style="--c:#ebbcbf" title="Blush pink"></li>
           </ul>
         </header>
+        <div class="chapter-body">
         <ol class="looks">
-          <li class="look">
-            <button class="look-open" data-full="assets/img/look-05.svg" data-caption="Teal &amp; Roses · Look 1 (image slot)">
-              <span class="mat"><img src="assets/img/look-05.svg" alt="Image slot for Teal and Roses, look 1" loading="lazy"></span>
+          <li class="look look--lead">
+            <button class="look-open" data-full="assets/img/teal-roses/look-1.jpg" data-caption="Teal and Roses, seated">
+              <span class="mat"><img src="assets/img/teal-roses/look-1-800.jpg" srcset="assets/img/teal-roses/look-1-800.jpg 800w, assets/img/teal-roses/look-1.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="Teal and Roses, seated" loading="lazy"></span>
             </button>
-            <p class="caption"><span class="title">Look 1</span><span class="medium">The green of an old palace</span></p>
+            <p class="caption"><span class="medium">The green of an old palace</span></p>
           </li>
-          <li class="look look--offset">
-            <button class="look-open" data-full="assets/img/look-06.svg" data-caption="Teal &amp; Roses · Detail (image slot)">
-              <span class="mat"><img src="assets/img/look-06.svg" alt="Image slot for Teal and Roses, detail" loading="lazy"></span>
+          <li class="look look--video ">
+            <span class="mat"><video data-autoplay muted loop playsinline preload="none" poster="assets/video/teal-roses-poster.jpg" aria-label="Teal and Roses in motion"><source src="assets/video/teal-roses.mp4" type="video/mp4"></video></span>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/teal-roses/look-2.jpg" data-caption="Teal and Roses, detail">
+              <span class="mat"><img src="assets/img/teal-roses/look-2-800.jpg" srcset="assets/img/teal-roses/look-2-800.jpg 800w, assets/img/teal-roses/look-2.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="Teal and Roses, detail" loading="lazy"></span>
             </button>
-            <p class="caption"><span class="title">Detail</span><span class="medium">Roses, gathered</span></p>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/teal-roses/detail-1.jpg" data-caption="Teal and Roses, sleeve">
+              <span class="mat"><img src="assets/img/teal-roses/detail-1-800.jpg" srcset="assets/img/teal-roses/detail-1-800.jpg 800w, assets/img/teal-roses/detail-1.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="Teal and Roses, sleeve" loading="lazy"></span>
+            </button>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/teal-roses/detail-2.jpg" data-caption="Teal and Roses, roses at the waist">
+              <span class="mat"><img src="assets/img/teal-roses/detail-2-800.jpg" srcset="assets/img/teal-roses/detail-2-800.jpg 800w, assets/img/teal-roses/detail-2.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="Teal and Roses, roses at the waist" loading="lazy"></span>
+            </button>
           </li>
         </ol>
+        <div class="strip-wrap">
+          <p class="strip-label">From the atelier</p>
+          <ol class="strip">
+            <li><button class="look-open" data-full="assets/img/teal-roses/moodboard.jpg" data-caption="Teal and Roses moodboard"><span class="mat"><img src="assets/img/teal-roses/moodboard-800.jpg" alt="Teal and Roses moodboard" loading="lazy"></span></button><span>Moodboard</span></li>
+            <li><button class="look-open" data-full="assets/img/teal-roses/sketch.jpg" data-caption="Teal and Roses sketches"><span class="mat"><img src="assets/img/teal-roses/sketch-800.jpg" alt="Teal and Roses sketches" loading="lazy"></span></button><span>Sketch</span></li>
+            <li><button class="look-open" data-full="assets/img/teal-roses/process.jpg" data-caption="Teal and Roses, roses being shaped"><span class="mat"><img src="assets/img/teal-roses/process-800.jpg" alt="Teal and Roses, roses being shaped" loading="lazy"></span></button><span>Roses</span></li>
+          </ol>
+        </div>
+        </div>
+      </article>
+
+      <article class="chapter chapter--stone" aria-labelledby="ch4">
+        <header class="chapter-head">
+          <p class="chapter-num">IV.</p>
+          <h3 id="ch4">Bridal</h3>
+          <p class="chapter-concept">Carved from marble and light. A bride drawn from old statues and white roses, in a garden of stone.</p>
+          <ul class="swatches" aria-label="Colour story">
+            <li style="--c:#f4ecdd" title="Ivory"></li>
+            <li style="--c:#d8cbb5" title="Marble"></li>
+            <li style="--c:#b9a184" title="Warm stone"></li>
+          </ul>
+        </header>
+        <div class="chapter-body">
+        <ol class="looks">
+          <li class="look look--lead">
+            <button class="look-open" data-full="assets/img/bridal/look-1.jpg" data-caption="The bridal gown in the garden">
+              <span class="mat"><img src="assets/img/bridal/look-1-800.jpg" srcset="assets/img/bridal/look-1-800.jpg 800w, assets/img/bridal/look-1.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The bridal gown in the garden" loading="lazy"></span>
+            </button>
+            <p class="caption"><span class="medium">Marble, softened</span></p>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/bridal/look-2.jpg" data-caption="The bridal gown against stone">
+              <span class="mat"><img src="assets/img/bridal/look-2-800.jpg" srcset="assets/img/bridal/look-2-800.jpg 800w, assets/img/bridal/look-2.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The bridal gown against stone" loading="lazy"></span>
+            </button>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/bridal/look-3.jpg" data-caption="The bridal gown, sleeve and rose">
+              <span class="mat"><img src="assets/img/bridal/look-3-800.jpg" srcset="assets/img/bridal/look-3-800.jpg 800w, assets/img/bridal/look-3.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The bridal gown, sleeve and rose" loading="lazy"></span>
+            </button>
+          </li>
+          <li class="look look--video ">
+            <span class="mat"><video data-autoplay muted loop playsinline preload="none" poster="assets/video/bridal-poster.jpg" aria-label="The bridal gown in motion"><source src="assets/video/bridal.mp4" type="video/mp4"></video></span>
+          </li>
+          <li class="look ">
+            <button class="look-open" data-full="assets/img/bridal/detail-1.jpg" data-caption="The bridal gown, detail">
+              <span class="mat"><img src="assets/img/bridal/detail-1-800.jpg" srcset="assets/img/bridal/detail-1-800.jpg 800w, assets/img/bridal/detail-1.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="The bridal gown, detail" loading="lazy"></span>
+            </button>
+          </li>
+        </ol>
+        <div class="strip-wrap">
+          <p class="strip-label">From the atelier</p>
+          <ol class="strip">
+            <li><button class="look-open" data-full="assets/img/bridal/moodboard.jpg" data-caption="Bridal moodboard"><span class="mat"><img src="assets/img/bridal/moodboard-800.jpg" alt="Bridal moodboard" loading="lazy"></span></button><span>Moodboard</span></li>
+            <li><button class="look-open" data-full="assets/img/bridal/sketch.jpg" data-caption="Bridal sketches"><span class="mat"><img src="assets/img/bridal/sketch-800.jpg" alt="Bridal sketches" loading="lazy"></span></button><span>Sketch</span></li>
+            <li><button class="look-open" data-full="assets/img/bridal/process.jpg" data-caption="A rose being shaped"><span class="mat"><img src="assets/img/bridal/process-800.jpg" alt="A rose being shaped" loading="lazy"></span></button><span>Rose</span></li>
+            <li><span class="mat"><video data-autoplay muted loop playsinline preload="none" poster="assets/video/bridal-atelier-poster.jpg" aria-label="The bridal gown being made"><source src="assets/video/bridal-atelier.mp4" type="video/mp4"></video></span><span>In the making</span></li>
+          </ol>
+        </div>
+        </div>
       </article>
     </section>
 
@@ -170,17 +285,17 @@
       </div>
       <ol class="steps">
         <li>
-          <figure class="step-media"><img src="assets/img/process-1.svg" alt="Image slot for a moodboard" loading="lazy"></figure>
+          <figure class="step-media"><img src="assets/img/teal-roses/moodboard-800.jpg" alt="Teal and Roses moodboard" loading="lazy"></figure>
           <h3><span>01</span> Moodboard</h3>
           <p>A painting, a garden, a single colour.</p>
         </li>
         <li>
-          <figure class="step-media"><img src="assets/img/process-2.svg" alt="Image slot for a design sketch" loading="lazy"></figure>
+          <figure class="step-media"><img src="assets/img/bridal/sketch-800.jpg" alt="Bridal sketches" loading="lazy"></figure>
           <h3><span>02</span> Sketch &amp; drawing</h3>
           <p>Pencil and watercolour, then the line of every seam.</p>
         </li>
         <li>
-          <figure class="step-media"><img src="assets/img/process-3.svg" alt="Image slot for atelier work in progress" loading="lazy"></figure>
+          <figure class="step-media"><img src="assets/img/in-bloom/process-800.jpg" alt="In Bloom roses, shaped by hand" loading="lazy"></figure>
           <h3><span>03</span> Execution</h3>
           <p>Cut, fitted and finished by hand, one flower at a time.</p>
         </li>
@@ -255,6 +370,11 @@
           <p class="form-status" role="status" aria-live="polite"></p>
         </div>
       </form>
+    </section>
+
+    <!-- OUTRO film -->
+    <section class="outro" aria-label="Closing film">
+      <video data-autoplay muted loop playsinline preload="none" poster="assets/video/outro-poster.jpg"><source src="assets/video/outro.mp4" type="video/mp4"></video>
     </section>
   </main>
 
