@@ -289,9 +289,17 @@ address a:hover { border-color: var(--teal); color: var(--teal); }
   .hero-rose { right: -4%; }
   .chapter { grid-template-columns: 1fr; }
   .strip { grid-template-columns: 1fr 1fr; }
-  .intro { margin-top: 52px; }
-  .intro + .hero { padding-top: 32px; }
-  .intro-cue { display: none; }
+  /* Phone intro: a centred square film on paper, with the Enter cue beneath */
+  .intro {
+    margin-top: 52px; height: calc(100svh - 52px); min-height: 420px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+    background: var(--paper); line-height: 1.2;
+  }
+  .intro::after { display: none; }
+  .intro-video { aspect-ratio: 1 / 1; object-fit: cover; object-position: center; }
+  .intro-cue { position: relative; left: auto; bottom: auto; translate: none; color: var(--taupe); }
+  .intro-cue::after { background: var(--taupe); }
+  .intro + .hero { padding-top: 32px; scroll-margin-top: 52px; }
   .site-header:not(.is-solid) .wordmark { color: var(--taupe); text-shadow: none; }
   .site-header:not(.is-solid) .nav a { color: var(--ink); text-shadow: none; }
   .chapter-head { position: static; }
