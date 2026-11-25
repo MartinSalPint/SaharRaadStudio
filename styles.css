@@ -187,8 +187,8 @@ h2 em { font: inherit; font-style: normal; text-transform: inherit; letter-spaci
     radial-gradient(ellipse 40% 50% at 85% 20%, rgba(231,185,184,0.25), transparent 70%),
     rgba(236,230,220,0.82);
 }
-.oval { margin: 0; justify-self: center; width: min(100%, 440px); padding: 14px; border-radius: 50%; background: var(--paper); box-shadow: 0 0 0 1px var(--line), 0 20px 40px -24px rgba(59,51,44,0.4); }
-.oval img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 50%; }
+.oval { margin: 0; justify-self: center; width: min(100%, 360px); padding: 14px; border-radius: 50%; background: var(--paper); box-shadow: 0 0 0 1px var(--line), 0 20px 40px -24px rgba(59,51,44,0.4); }
+.oval img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; }
 .atelier-text { max-width: 560px; }
 .atelier-text h2 { margin-bottom: 1.6rem; }
 .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin: 2.4rem 0 0; padding-top: 1.8rem; border-top: 1px solid var(--line); }

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1750" width="1400" height="1750">
-<defs><radialGradient id="g" cx="0.4" cy="0.35" r="0.9"><stop offset="0" stop-color="#eae4da"/><stop offset="1" stop-color="#d9cfc1"/></radialGradient></defs>
-<rect width="1400" height="1750" fill="url(#g)"/>
-<rect x="63.0" y="63.0" width="1274.0" height="1624.0" fill="none" stroke="#8b7b6a" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="10 8"/>
-<g font-family="Georgia, serif" text-anchor="middle" fill="#6f6253">
-<text x="700.0" y="854" font-size="70" font-style="italic" fill-opacity="0.85">Portrait of Sahar</text>
-<text x="700.0" y="938" font-size="28" letter-spacing="6" fill-opacity="0.6">IMAGE SLOT · 1400 × 1750</text>
-<text x="700.0" y="987" font-size="25" fill-opacity="0.5">assets/img/atelier</text>
-</g></svg>

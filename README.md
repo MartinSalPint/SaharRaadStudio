@@ -26,6 +26,6 @@ Photos and films are Sahar's own work (from her Instagram, supplied by Martin). 
 
 - `assets/img/<piece>/` — `fairy-tale`, `in-bloom`, `teal-roses`, `bridal`: `look-*`, `detail-*`, `moodboard`, `sketch*`, `process`, and `worn-*` (The Fairy Tale on its owner's engagement day)
 - `assets/video/` — `intro` (opening film), `outro` (closing film), one film per piece; each has a `-poster.jpg`. All muted, no audio track, H.264 with fast start.
-- `assets/img/atelier.svg` — still a placeholder: portrait of Sahar for the About section.
+- `assets/img/sahar.jpg` — portrait of Sahar (About section, 400×400; a larger original would look sharper).
 
 To swap a photo, replace both sizes with the same names. To re-encode a video: `ffmpeg -i in.mp4 -an -vf scale=540:-2 -c:v libx264 -crf 30 -movflags +faststart out.mp4`.
