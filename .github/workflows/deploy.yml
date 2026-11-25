@@ -27,7 +27,7 @@ jobs:
         run: |
           rsync -a --exclude='.git*' --exclude='.github' --exclude='docs' --exclude='README.md' --exclude='_site' ./ _site/
           touch _site/.nojekyll
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
       - id: deployment
