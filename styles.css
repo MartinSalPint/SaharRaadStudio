@@ -159,7 +159,9 @@ h2 em { font: inherit; font-style: normal; text-transform: inherit; letter-spaci
 .intro-video { display: block; width: 100%; height: auto; aspect-ratio: 1276 / 718; }
 .intro::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(20,16,12,0.35), transparent 25%, transparent 75%, rgba(20,16,12,0.35)); pointer-events: none; }
 .intro-cue {
-  position: absolute; left: 50%; bottom: 28px; translate: -50% 0; z-index: 1;
+  position: absolute; left: 50%; translate: -50% 0; z-index: 1;
+  /* Sits 28px above the bottom of the film, or of the screen if the film is taller than the screen */
+  bottom: max(28px, calc(100% - 100vh + 28px)); bottom: max(28px, calc(100% - 100svh + 28px));
   font: 400 0.75rem/1 var(--display); letter-spacing: 0.32em; text-transform: uppercase; color: #fff; text-decoration: none;
   padding-bottom: 28px;
 }
